@@ -1,0 +1,7 @@
+package org.choreo.exceptionhandling.exceptions;
+
+public class OrderNotFoundException extends RuntimeException{
+    public OrderNotFoundException(String orderId) {
+        super("Order not found for order: " + orderId);
+    }
+}
